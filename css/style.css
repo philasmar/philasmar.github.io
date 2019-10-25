@@ -1069,8 +1069,10 @@ h3 {
   background-size: cover;
   background-position: center  center;
   background-repeat: no-repeat;
-  padding-top: 300px;
+  padding-top: 150px;
   padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 767px) {
@@ -5851,3 +5853,29 @@ h6 {
 .formQuestion{
   margin: 10px;
 }
+
+
+.slider_text{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+}
+
+@media (max-width: 1200px) {
+.slider_text{
+    padding-left: 40px;
+    padding-right: 40px;
+}}
+
+.prototypeImage{
+    vertical-align: middle;
+    border-style: none;
+    width: 300px;
+    margin-right: 75px;
+}
+
+@media (max-width: 1200px) {
+.slider_text{
+    padding-left: 40px;
+    padding-right: 40px;
+}}
