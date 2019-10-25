@@ -22,5 +22,6 @@ function registerKey(e) {
 		$('.formQuestion').remove();
 		currentQuestion += 1;
   	$('#questionArea').append("<div class='formQuestion'><h2>" + currentQuestion + ". " + questionArr[currentQuestion - 1]+ "</h2><input onkeydown='registerKey(event)' class='lui-input  lui-input--large'/></div>");
+		$('.formQuestion>input').select();
 	}
 }
