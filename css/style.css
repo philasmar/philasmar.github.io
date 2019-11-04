@@ -5854,6 +5854,62 @@ h6 {
   margin: 10px;
 }
 
+.formQuestion.action{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lui-button-big {
+  vertical-align: middle;
+  height: 40px;
+  min-width: 44px;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 24px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  border-radius: 3px;
+  color: white;
+  /* background-color: transparent; */
+  background-image: linear-gradient(to right,rgb(255, 114, 7), rgb(193, 52, 121), rgb(43, 169, 242), rgb(45, 100, 230));
+  border-color: #B3B3B3;
+  transition: border-color 200ms ease-out;
+}
+.lui-button-big:hover {
+  border-color: #666666;
+}
+.lui-button-big:active {
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-color: transparent;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+  background-image: linear-gradient(to right,rgba(255, 114, 7, 0.6), rgba(193, 52, 121, 0.6), rgba(43, 169, 242, 0.6), rgba(45, 100, 230, 0.6));
+}
+.lui-button-big[disabled]{
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.lui-button-big:focus {
+  border: 1px solid #52a2cc;
+  transition: none;
+  box-shadow: 0 0 1px 1px rgba(82, 162, 204, 0.7);
+}
+.lui-button-big:focus:active {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+}
 
 .slider_text{
     padding-left: 100px;
@@ -5879,3 +5935,8 @@ h6 {
     padding-left: 40px;
     padding-right: 40px;
 }}
+
+.inputerror{
+  display: none;
+  color: rgb(210,0,0);
+}

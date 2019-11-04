@@ -1131,7 +1131,7 @@
   content: none;
 }
 .lui-checkbox__input:checked + .lui-checkbox__check-wrap .lui-checkbox__check:after {
-  content: "m";
+  content: "\2713";
 }
 .lui-checkbox__input:indeterminate + .lui-checkbox__check-wrap .lui-checkbox__check:after {
   content: "\2013";
