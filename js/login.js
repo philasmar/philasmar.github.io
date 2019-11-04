@@ -70,7 +70,7 @@ firebase.database().ref('nopioid-signup-form').orderByChild('firstname').on("val
 					"</div>" +
 			"</div>" +
 		"</div>");
-	}});
+	}
 
 	$(".signup-detail-highlight").click(function(){
 		if ($(this).parent().find(".signup-detail-breakdown").css("display") == "none"){
@@ -79,7 +79,7 @@ firebase.database().ref('nopioid-signup-form').orderByChild('firstname').on("val
 			$(this).parent().find(".signup-detail-breakdown").hide();
 		}
 	});
-
+});
 	var dynamicFormStatistics = {};
 
 	firebase.database().ref('nopioid-dynamic-form-results').orderByChild('id').on("value", function(snapshot) {

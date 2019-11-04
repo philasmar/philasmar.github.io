@@ -11,8 +11,12 @@ function registerKey(e) {
 		firebase.database().ref('nopioid-dynamic-form-results').push().set(question);
 		$('.formQuestion').remove();
 		currentQuestion += 1;
-  	$('#questionArea').append("<div class='formQuestion' questionid='" + currentQuestion + "'><h2>" + currentQuestion + ". " + questionArr[currentQuestion - 1]+ "</h2><input onkeydown='registerKey(event)' class='lui-input  lui-input--large'/></div>");
-		$('.formQuestion>input').select();
+		if (questionArr.length < currentQuestion){
+			$('#questionArea').append("<h2>Thanks for the help! The form has ended!</h2>");
+		}else{
+	  	$('#questionArea').append("<div class='formQuestion' questionid='" + currentQuestion + "'><h2>" + currentQuestion + ". " + questionArr[currentQuestion - 1]+ "</h2><input onkeydown='registerKey(event)' class='lui-input  lui-input--large'/></div>");
+			$('.formQuestion>input').select();
+		}
 	}
 }
 
