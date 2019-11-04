@@ -602,18 +602,35 @@ pre code {
 
 @media (min-width:768px) {
     .container {
+        max-width: 650px
+    }
+}
+@media (min-width:768px) {
+    .container.slider {
         max-width: 380px
     }
 }
 
 @media (min-width:992px) {
     .container {
+        max-width: 850px
+    }
+}
+
+@media (min-width:992px) {
+    .container.slider {
         max-width: 610px
     }
 }
 
 @media (min-width:1200px) {
     .container {
+        max-width: 1050px
+    }
+}
+
+@media (min-width:1200px) {
+    .container.slider {
         max-width: 760px
     }
 }
