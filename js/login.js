@@ -118,6 +118,6 @@ firebase.database().ref('nopioid-signup-form').orderByChild('firstname').on("val
 		for (x in dynamicFormStatistics){
 			responses += dynamicFormStatistics[x];
 		}
-		var average = responses/Object.keys(dynamicFormStatistics).length;
+		var average = Math.floor(responses/Object.keys(dynamicFormStatistics).length);
 		$(".baloonAverage").append(average);
 	});
