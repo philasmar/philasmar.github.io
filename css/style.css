@@ -1993,7 +1993,7 @@ h3 {
 
 /* line 46, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
 .faq_area #accordion .card .card-body {
-  padding: 0 0 40px 76px;
+  padding: 0 30px 40px 76px;
 }
 
 @media (max-width: 767px) {
