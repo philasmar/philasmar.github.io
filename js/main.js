@@ -80,9 +80,7 @@ function submitFormSuccess(){
 	$(".formQuestion>label>input").prop("checked", false);
 	$(".inputerror").css("display", "none");
 }
-
 $(document).ready(function(){
-
 // mobile_menu
 var menu = $('ul#navigation');
 if(menu.length){

@@ -1,20 +1,4 @@
-questionArr = ["What is your first name?",
-"Where did you grow up?",
-"What is your mother’s maiden name?",
-"What is your favorite pasta shape?",
-"What was your first pet?",
-"Where did you attend secondary school?",
-"What was your first car?",
-"What is your favorite ice cream flavor? Haagen Daz vs Ben and Jerry’s? Pick one!",
-"At what age did you learn how to walk?",
-"What is your favorite cuisine?",
-"Do you enjoy sushi?",
-"How many hours do you sleep on a given night?",
-"How many children do you have?",
-"Do you drink coffee?",
-"How often do you go grocery shopping per month?",
-"Have you ever binge watched a Netflix series?",
-"What does binge watching mean to you?"]
+questionArr = []
 currentQuestion = 1;
 function registerKey(e) {
 	var code = (e.keyCode ? e.keyCode : e.which);
@@ -25,3 +9,13 @@ function registerKey(e) {
 		$('.formQuestion>input').select();
 	}
 }
+
+
+firebase.database().ref('nopioid-dynamic-form-questions/').orderByChild('question').on("value", function(snapshot) {
+	var json = JSON.parse(JSON.stringify(snapshot.val()));
+	for (x in json) {
+	  questionArr.push(json[x].question);
+	}
+	$('#questionArea').append("<div class='formQuestion'><h2>1. " + questionArr[0]+ "</h2><input onkeydown='registerKey(event)' class='lui-input  lui-input--large'/></div>");
+	$('.formQuestion>input').select();
+});

@@ -53,10 +53,9 @@
                                         <li><a  class="active" href="#">Forms <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="dynamicForm.html">Dynamic Form</a></li>
-                                                <li><a href="single-blog.html">single-blog</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="login.html">Login</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -94,7 +93,6 @@
                 </div>
             </div>
             <div id="questionArea">
-            <div class="formQuestion"><h2>1. What is your first name?</h2><input onkeydown="registerKey(event)" class="lui-input  lui-input--large"/></div>
         </div>
       </div>
     </div>
@@ -149,6 +147,32 @@ Copyright Nopioid &copy;<script>document.write(new Date().getFullYear());</scrip
     <!-- footer_end -->
 
 
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+
+            <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+            <!-- TODO: Add SDKs for Firebase products that you want to use
+                 https://firebase.google.com/docs/web/setup#available-libraries -->
+            <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+          <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyCBJehn1x9TRi8o9sD947Y8JIKI5niZb1w",
+              authDomain: "nopioid-c9618.firebaseapp.com",
+              databaseURL: "https://nopioid-c9618.firebaseio.com",
+              projectId: "nopioid-c9618",
+              storageBucket: "nopioid-c9618.appspot.com",
+              messagingSenderId: "993898990420",
+              appId: "1:993898990420:web:90cfaea25871b3a39d56c1",
+              measurementId: "G-9SL7LZ5NFE"
+            };
+
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+            var database = firebase.database();
+          </script>
 
 
 
