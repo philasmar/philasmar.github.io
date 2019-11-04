@@ -9,6 +9,7 @@ $("#loginButton").click(function(){
 					$("#loginForm").css("display", "none");
 					$("#dynamicFormSettings").css("display", "block");
 					$("#signup-form-details").css("display", "block");
+					$("#dynamic-form-details").css("display", "block");
 				}else{
 					$("#loginerror").css("display", "block");
 				}
@@ -69,7 +70,7 @@ firebase.database().ref('nopioid-signup-form').orderByChild('firstname').on("val
 					"</div>" +
 			"</div>" +
 		"</div>");
-	}
+	}});
 
 	$(".signup-detail-highlight").click(function(){
 		if ($(this).parent().find(".signup-detail-breakdown").css("display") == "none"){
@@ -78,4 +79,45 @@ firebase.database().ref('nopioid-signup-form').orderByChild('firstname').on("val
 			$(this).parent().find(".signup-detail-breakdown").hide();
 		}
 	});
-});
+
+	var dynamicFormStatistics = {};
+
+	firebase.database().ref('nopioid-dynamic-form-results').orderByChild('id').on("value", function(snapshot) {
+		var json = JSON.parse(JSON.stringify(snapshot.val()));
+		for (x in json) {
+			if ("Question " + json[x].id in dynamicFormStatistics){
+				dynamicFormStatistics["Question " + json[x].id] += 1
+			}else{
+				dynamicFormStatistics["Question " + json[x].id] = 1
+			}
+		}
+		var ctx = document.getElementById('myChart').getContext('2d');
+		var myChart = new Chart(ctx, {
+		    type: 'bar',
+		    data: {
+		        labels: Object.keys(dynamicFormStatistics),
+		        datasets: [{
+		            label: '# of Votes',
+		            data: Object.values(dynamicFormStatistics),
+		            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+		            borderColor: 'rgba(255, 99, 132, 1)',
+		            borderWidth: 1
+		        }]
+		    },
+		    options: {
+		        scales: {
+		            yAxes: [{
+		                ticks: {
+		                    beginAtZero: true
+		                }
+		            }]
+		        }
+		    }
+		});
+		var responses = 0;
+		for (x in dynamicFormStatistics){
+			responses += dynamicFormStatistics[x];
+		}
+		var average = responses/Object.keys(dynamicFormStatistics).length;
+		$(".baloonAverage").append(average);
+	});
