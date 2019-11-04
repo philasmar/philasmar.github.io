@@ -8,6 +8,7 @@ $("#loginButton").click(function(){
 		    if (pass == snapshot.val().password){
 					$("#loginForm").css("display", "none");
 					$("#dynamicFormSettings").css("display", "block");
+					$("#signup-form-details").css("display", "block");
 				}else{
 					$("#loginerror").css("display", "block");
 				}
@@ -32,4 +33,49 @@ $("#addQuestion").click(function(){
 						$("#questionerror").css("display", "block");
         });
 	}
+});
+
+firebase.database().ref('nopioid-signup-form').orderByChild('firstname').on("value", function(snapshot) {
+	var json = JSON.parse(JSON.stringify(snapshot.val()));
+	for (x in json) {
+		var clienttype = ""
+		if (json[x].clienttype == "1"){
+			clienttype = "Patient";
+		}else{
+			clienttype = "Healthcare Provider";
+		}
+		$(".signup-detail-container").append("<div class='signup-detail'>" +
+			"<div class='signup-detail-highlight'>" + json[x].firstname + " " + json[x].lastname + "</div>" +
+			"<div class='signup-detail-breakdown'>" +
+					"<div class='client-detail'>" +
+						"<div class='client-detail-title'>First Name</div>" +
+						"<div class='client-detail-description'>" + json[x].firstname + "</div>" +
+					"</div>" +
+					"<div class='client-detail'>" +
+						"<div class='client-detail-title'>Last Name</div>" +
+						"<div class='client-detail-description'>" + json[x].lastname + "</div>" +
+					"</div>" +
+					"<div class='client-detail'>" +
+						"<div class='client-detail-title'>Email</div>" +
+						"<div class='client-detail-description'>" + json[x].email + "</div>" +
+					"</div>" +
+					"<div class='client-detail'>" +
+						"<div class='client-detail-title'>Client Type</div>" +
+						"<div class='client-detail-description'>" + clienttype + "</div>" +
+					"</div>" +
+					"<div class='client-detail'>" +
+						"<div class='client-detail-title'>Phone Number</div>" +
+						"<div class='client-detail-description'>" + json[x].phonenumber + "</div>" +
+					"</div>" +
+			"</div>" +
+		"</div>");
+	}
+
+	$(".signup-detail-highlight").click(function(){
+		if ($(this).parent().find(".signup-detail-breakdown").css("display") == "none"){
+			$(this).parent().find(".signup-detail-breakdown").css("display", "flex");
+		}else{
+			$(this).parent().find(".signup-detail-breakdown").hide();
+		}
+	});
 });
