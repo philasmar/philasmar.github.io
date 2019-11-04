@@ -1079,7 +1079,7 @@ h3 {
 @media (max-width: 767px) {
   /* line 4, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area {
-    padding-top: 140px;
+    padding-top: 70px;
     padding-bottom: 30px;
   }
 }
@@ -5952,3 +5952,8 @@ h6 {
     white-space: normal;
     text-align: left;
 }
+
+@media (max-width: 767px) {
+.slider_text{
+    padding-top: 0px;
+}}
