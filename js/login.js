@@ -10,6 +10,7 @@ $("#loginButton").click(function(){
 					$("#dynamicFormSettings").css("display", "block");
 					$("#signup-form-details").css("display", "block");
 					$("#dynamic-form-details").css("display", "block");
+					$("#patient-form-creation").css("display", "block");
 				}else{
 					$("#loginerror").css("display", "block");
 				}
@@ -34,6 +35,48 @@ $("#addQuestion").click(function(){
 						$("#questionerror").css("display", "block");
         });
 	}
+});
+
+$("#addProperty").click(function(){
+	$("#patientFormPropertiesArea").append("<div class='patientKeyValue'>" +
+		"<div class='patientKeyDiv'>" +
+			"<h2>Property</h2><input class='patientKey lui-input  lui-input--large'/>" +
+		"</div>" +
+		"<div class='patientValueDiv'>" +
+			"<h2>Detail</h2><input class='patientValue lui-input  lui-input--large'/>" +
+		"</div>" +
+	"</div><br/>");
+});
+
+$("#createPatient").click(function(){
+	var patientProperties = $(".patientKeyValue");
+	var dict = {};
+	for(var i = 0; i < patientProperties.length; i++){
+		var property = $(patientProperties[i]).find(".patientKeyDiv > input").val();
+		var detail = $(patientProperties[i]).find(".patientValueDiv > input").val();
+		if (property != "" && detail != "")
+			dict[property] = detail;
+	}
+	if (Object.keys(dict).length > 0){
+		firebase.database().ref('nopioid-sample-patients').push().set(dict)
+	      .then(function(snapshot) {
+	          $("#patientFormPropertiesArea").empty();
+							$("#patientFormPropertiesArea").append("<div class='patientKeyValue'>" +
+								"<div class='patientKeyDiv'>" +
+									"<h2>Property</h2><input class='patientKey lui-input  lui-input--large'/>" +
+								"</div>" +
+								"<div class='patientValueDiv'>" +
+									"<h2>Detail</h2><input class='patientValue lui-input  lui-input--large'/>" +
+								"</div>" +
+							"</div><br/>");
+	      }, function(error) {
+	          console.log('Error creating patient: ' + error);
+						$("#addPropertyError").css("display", "block");
+	      });
+	}else{
+		$("#addPropertyError").css("display", "block");
+	}
+
 });
 
 firebase.database().ref('nopioid-signup-form').orderByChild('firstname').on("value", function(snapshot) {

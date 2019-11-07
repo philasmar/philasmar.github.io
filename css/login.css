@@ -10,6 +10,10 @@
   display: none;
 }
 
+#patient-form-creation{
+  display: none;
+}
+
 .signup-detail{
     margin-bottom: 10px;
 }
@@ -57,4 +61,20 @@
     margin-bottom: 100px;
     flex-direction: column;
     align-items: center;
+}
+
+.patientKeyValue{
+    display: flex;
+    flex-grow: 1;
+}
+
+.patientKeyDiv{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.patientValueDiv{
+    flex-grow: 4;
+    margin-left: 20px;
 }
