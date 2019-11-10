@@ -8,15 +8,15 @@ firebase.database().ref('nopioid-sample-patients').on("value", function(snapshot
 		// 	clienttype = "Healthcare Provider";
 		// }
 		var details = "";
-		for (y in json[x]){
+		for (item in json[x].order){
 			details +=
 					"<div class='patient-property'>" +
-						"<div class='patient-detail-title'>" + y + ": " + json[x][y] + "</div>" +
+						"<div class='patient-detail-title'>" + json[x].order[item] + ": " + json[x][json[x].order[item]] + "</div>" +
 					"</div><br/>";
 		}
-		for (y in json[x]){
+		for (item in json[x].order){
 			$(".patients-detail-container").append("<div class='patient-detail'>" +
-				"<div class='patient-detail-highlight'>" + json[x][y] + "</div>" +
+				"<div class='patient-detail-highlight'>" + json[x][json[x].order[item]] + "</div>" +
 				"<div class='patient-detail-breakdown'>" +
 						details +
 						"<h4>Insert recommendation below </h4><input class='patientRecommendation lui-input  lui-input--large'/>" +
@@ -24,6 +24,22 @@ firebase.database().ref('nopioid-sample-patients').on("value", function(snapshot
 			"</div>");
 			break;
 		}
+		// for (y in json[x]){
+		// 	details +=
+		// 			"<div class='patient-property'>" +
+		// 				"<div class='patient-detail-title'>" + y + ": " + json[x][y] + "</div>" +
+		// 			"</div><br/>";
+		// }
+		// for (y in json[x]){
+		// 	$(".patients-detail-container").append("<div class='patient-detail'>" +
+		// 		"<div class='patient-detail-highlight'>" + json[x][y] + "</div>" +
+		// 		"<div class='patient-detail-breakdown'>" +
+		// 				details +
+		// 				"<h4>Insert recommendation below </h4><input class='patientRecommendation lui-input  lui-input--large'/>" +
+		// 		"</div>" +
+		// 	"</div>");
+		// 	break;
+		// }
 	}
 
 	$(".patient-detail-highlight").click(function(){

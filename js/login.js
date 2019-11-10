@@ -51,13 +51,16 @@ $("#addProperty").click(function(){
 $("#createPatient").click(function(){
 	var patientProperties = $(".patientKeyValue");
 	var dict = {};
+	var order = [];
 	for(var i = 0; i < patientProperties.length; i++){
 		var property = $(patientProperties[i]).find(".patientKeyDiv > input").val();
 		var detail = $(patientProperties[i]).find(".patientValueDiv > input").val();
 		if (property != "" && detail != "")
 			dict[property] = detail;
+			order.push(property);
 	}
-	if (Object.keys(dict).length > 0){
+	dict['order'] = order;
+	if (Object.keys(dict).length > 1){
 		firebase.database().ref('nopioid-sample-patients').push().set(dict)
 	      .then(function(snapshot) {
 	          $("#patientFormPropertiesArea").empty();
