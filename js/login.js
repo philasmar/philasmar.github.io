@@ -4,8 +4,11 @@ $("#loginButton").click(function(){
 	if (user == "" || pass == ""){
 		$("#loginerror").css("display", "block");
 	}else{
-		firebase.database().ref('registered-users/' + user).orderByChild('user').on("value", function(snapshot) {
-		    if (pass == snapshot.val().password){
+		firebase.database().ref('registered-users').orderByChild('user').on("value", function(snapshot) {
+			var json = JSON.parse(JSON.stringify(snapshot.val()));
+			for (x in json) {
+
+				if (json[x].user == user && json[x].password == pass){
 					$("#loginForm").css("display", "none");
 					$("#dynamicFormSettings").css("display", "block");
 					$("#signup-form-details").css("display", "block");
@@ -14,6 +17,7 @@ $("#loginButton").click(function(){
 				}else{
 					$("#loginerror").css("display", "block");
 				}
+			}
 		});
 	}
 });
