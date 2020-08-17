@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>COVID-19</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="topbar">
+    <div id="selectionactions">
+      <span id="clearselections" class="far fa-window-close"></span>
+    </div>
+    <div id="selections">
+    </div>
+    <div id="actions">
+      <i id="bookmarkOff" class="far fa-star"></i>
+      <i id="bookmarkOn" style="display: none;" class="fas fa-star"></i>
+    </div>
+  </div>
+  <div id="title">
+    <span>COVID-19 Dashboard</span>
+  </div>
+  <div id="filters">
+    <div class="dropdown">
+      <div onclick="countryFunction()" class="dropbtn"><span>Country</span><div class="filterhighlight"></div></div>
+      <div id="countriesDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." class="searchInput" id="countriesInput" onkeyup="filterFunction('country')">
+      </div>
+    </div>
+    <div class="dropdown">
+      <div onclick="stateFunction()" class="dropbtn"><span>State</span><div class="filterhighlight"></div></div>
+      <div id="statesDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." class="searchInput" id="statesInput" onkeyup="filterFunction('state')">
+      </div>
+    </div>
+    <div class="dropdown">
+      <div onclick="cityFunction()" class="dropbtn"><span>City</span><div class="filterhighlight"></div></div>
+      <div id="citiesDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." class="searchInput" id="citiesInput" onkeyup="filterFunction('city')">
+      </div>
+    </div>
+  </div>
+  <div id="kpi" class="kpi">
+    <span class="kpiTitle">Total</span>
+    <span class="kpiValue">0</span>
+  </div>
+  <div id="barchart" class="chart">
+    <div class="chart-container" style="position: relative; height:100%; width:97%">
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+<script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    background-color: #f2f2f2;
+    font-family: Verdana;
+    font-size: 12px;
+    height: 100vh;
+}
+
+#filters{
+    display: flex;
+    margin: 5px;
+}
+
+.filterBox {
+  display: flex;
+  width: 149px;
+  background-color: #FFF;
+  color: #404040;
+  border-right: 1px solid #d9d9d9;
+  padding-top: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.filterValues{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.filterBoxField {
+    font-weight: 600;
+}
+
+.filterRemove {
+    background-image: url(../images/delete-png.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+#selections{
+    height: 38px;
+    color: #595959;
+    border-bottom: 1px solid #d9d9d9;
+    background-color: #E6E6E6;
+    display: flex;
+    flex-grow: 1;
+}
+
+#topbar{
+    color: #595959;
+    border-bottom: 1px solid #d9d9d9;
+    background-color: #E6E6E6;
+    display: flex;
+}
+
+#actions{
+  width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#selectionactions{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#selectionactions:hover{
+  background-color: #D6D6D6;
+  cursor: pointer;
+}
+
+#bookmarkOff{
+  cursor: pointer;
+}
+
+#bookmarkOff:hover{
+  color: #4477AA;
+}
+
+#bookmarkOn:hover{
+  color: #595959;
+}
+
+#bookmarkOn{
+  color: #4477AA;
+  cursor: pointer;
+}
+
+#title{
+    height: 46px;
+    color: #B0AFAE;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#title span{
+    height: 46px;
+    color: #B0AFAE;
+    font-size: 22px;
+    margin-left: 15px;
+    padding-top: 10px;
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: #595959;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  flex-grow: 1;
+  overflow: hidden;
+  border: 1px solid #d9d9d9;
+  height: 34px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  justify-content: center;
+}
+
+.filterhighlight{
+    height: 4px;
+    background-color: white;
+    border-top: 1px solid #d9d9d9;
+}
+
+.dropbtn span{
+    flex-grow: 1;
+    margin-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #F9F9F9;
+}
+
+.searchInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 15px 12px 15px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.searchInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+    display: flex;
+    flex-grow: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+  top: 40px;
+  max-height: 400px;
+    width: 100%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {
+
+      display: flex;
+      flex-direction: column;}
+
+.chart{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.kpi{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 15px;
+    margin-bottom: 0px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+}
+
+.kpiTitle{
+    color: #595959;
+    font-size: 33px;
+}
+
+.kpiValue{
+  color: #4477AA;
+  font-size: 56px;
+}
+
+#barchart{
+    background-color: white;
+    margin: 15px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    flex-grow: 1;
+}
