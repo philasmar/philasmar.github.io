@@ -1,791 +1,1342 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Philippe's Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Philippe's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Philippe El Asmar's personal portfolio website showcasing skills and experience in software engineering."
+    />
+    <meta
+      name="keywords"
+      content="software engineer, portfolio, resume, C#, .NET, AWS, cloud, devops, automation"
+    />
+    <meta name="author" content="Philippe El Asmar" />
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="Philippe El Asmar - Software Engineer" />
+    <meta property="og:image" content="images/about.jpg" />
+    <meta property="og:url" content="https://philasmar.com" />
+    <meta property="og:site_name" content="Philippe El Asmar Portfolio" />
+    <meta
+      property="og:description"
+      content="Software Development Engineer at AWS specializing in cloud infrastructure, automation, and system reliability."
+    />
+    <meta
+      name="twitter:title"
+      content="Philippe El Asmar - Software Engineer"
+    />
+    <meta name="twitter:image" content="images/about.jpg" />
+    <meta name="twitter:url" content="https://philasmar.com" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico" />
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700"
+      rel="stylesheet"
+    />
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css" />
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="colorlib-page">
+      <div class="container-wrap">
+        <a
+          href="#"
+          class="js-colorlib-nav-toggle colorlib-nav-toggle"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-expanded="false"
+          aria-controls="navbar"
+          ><i></i
+        ></a>
+        <aside
+          id="colorlib-aside"
+          role="complementary"
+          class="border js-fullheight"
+        >
+          <div class="text-center">
+            <div
+              class="author-img"
+              style="background-image: url(images/about.jpg)"
+            ></div>
+            <h1 id="colorlib-logo">
+              <a href="index.html">Philippe El Asmar</a>
+            </h1>
+            <span class="position"
+              ><b>Software Development Engineer</b> at AWS</span
+            >
+          </div>
+          <nav id="colorlib-main-menu" role="navigation" class="navbar">
+            <div id="navbar" class="collapse">
+              <ul>
+                <li class="active">
+                  <a href="#" data-nav-section="home">Home</a>
+                </li>
+                <li><a href="#" data-nav-section="about">About</a></li>
+                <li><a href="#" data-nav-section="education">Education</a></li>
+                <li>
+                  <a href="#" data-nav-section="experience">Experience</a>
+                </li>
+                <li><a href="#" data-nav-section="expertise">Expertise</a></li>
+                <li><a href="#" data-nav-section="skills">Skills</a></li>
+                <li><a href="#" data-nav-section="projects">Projects</a></li>
+                <li><a href="#" data-nav-section="interests">Interests</a></li>
+                <li><a href="#" data-nav-section="contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
 
-	</head>
-	<body>
-	<div id="colorlib-page">
-		<div class="container-wrap">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-			<div class="text-center">
-				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
-				<h1 id="colorlib-logo"><a href="index.html">Philippe El Asmar</a></h1>
-				<span class="position"><b>Software Engineer</b> in New York</span>
-			</div>
-			<nav id="colorlib-main-menu" role="navigation" class="navbar">
-				<div id="navbar" class="collapse">
-					<ul>
-						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-						<li><a href="#" data-nav-section="about">About</a></li>
-						<li><a href="#" data-nav-section="education">Education</a></li>
-						<li><a href="#" data-nav-section="experience">Experience</a></li>
-						<li><a href="#" data-nav-section="expertise">Expertise</a></li>
-						<li><a href="#" data-nav-section="skills">Skills</a></li>
-						<li><a href="#" data-nav-section="projects">Projects</a></li>
-						<li><a href="#" data-nav-section="interests">Interests</a></li>
-						<li><a href="#" data-nav-section="contact">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
+          <div class="colorlib-footer">
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved
+            </p>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/Phil.Asmar" target="_blank"
+                  ><i class="icon-facebook2"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/PhilAsmar" target="_blank"
+                  ><i class="icon-twitter2"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/philasmar/" target="_blank"
+                  ><i class="icon-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/philippe-el-asmar-b3865618a/"
+                  target="_blank"
+                  ><i class="icon-linkedin2"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/philasmar" target="_blank"
+                  ><i class="icon-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </aside>
 
-			<div class="colorlib-footer">
-				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
-				<ul>
-					<li><a href="https://www.facebook.com/Phil.Asmar" target="_blank"><i class="icon-facebook2"></i></a></li>
-					<li><a href="https://twitter.com/PhilAsmar" target="_blank"><i class="icon-twitter2"></i></a></li>
-					<li><a href="https://www.instagram.com/philasmar/" target="_blank"><i class="icon-instagram"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/philippe-el-asmar-b3865618a/" target="_blank"><i class="icon-linkedin2"></i></a></li>
-					<li><a href="https://github.com/philasmar" target="_blank"><i class="icon-github"></i></a></li>
-				</ul>
-			</div>
+        <div id="colorlib-main">
+          <section id="colorlib-hero" class="js-fullheight" data-section="home">
+            <div class="flexslider js-fullheight">
+              <ul class="slides">
+                <li style="background-image: url(images/img_bg_1_dark.jpg)">
+                  <div class="overlay"></div>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div
+                        class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text"
+                      >
+                        <div class="slider-text-inner js-fullheight">
+                          <div class="desc">
+                            <h1>Hi! <br />I'm Philippe</h1>
+                            <p>
+                              <a
+                                href="files/philippe_el_asmar_cv.pdf"
+                                target="_blank"
+                                class="btn btn-primary btn-learn"
+                                >Download CV <i class="icon-download4"></i
+                              ></a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li style="background-image: url(images/img_bg_1_dark.jpg)">
+                  <div class="overlay"></div>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div
+                        class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text"
+                      >
+                        <div class="slider-text-inner">
+                          <div class="desc">
+                            <h1>I am a <br />Software Engineer</h1>
+                            <p>
+                              <a
+                                href="files/philippe_el_asmar_cv.pdf"
+                                class="btn btn-primary btn-learn"
+                                >Download CV<i class="icon-download4"></i
+                              ></a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
 
-		</aside>
+          <section class="colorlib-about" data-section="about">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="row row-bottom-padded-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="col-md-12">
+                      <div class="about-desc">
+                        <span class="heading-meta">About Me</span>
+                        <h2 class="colorlib-heading">Who Am I?</h2>
+                        <p>
+                          <strong
+                            >I'm Philippe El Asmar, a Software Development
+                            Engineer at Amazon Web Services (AWS)</strong
+                          >
+                          with a passion for building robust, scalable, and
+                          highly performant software solutions. I specialize in
+                          full-stack development, system design, and creating
+                          tools that improve the developer experience.
+                        </p>
+                        <p>
+                          My work involves deep-diving into complex systems to
+                          solve challenging problems, architecting new features,
+                          and developing innovative tools that boost developer
+                          productivity. I thrive on tackling difficult
+                          challenges and delivering impactful results that
+                          directly benefit customers and engineering teams.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div
+                      class="col-md-3 animate-box"
+                      data-animate-effect="fadeInBottom"
+                    >
+                      <div class="services color-1">
+                        <span class="icon2"><i class="icon-puzzle"></i></span>
+                        <h3>Software Development</h3>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 animate-box"
+                      data-animate-effect="fadeInRight"
+                    >
+                      <div class="services color-2">
+                        <span class="icon2"><i class="icon-data"></i></span>
+                        <h3>Backend Systems</h3>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 animate-box"
+                      data-animate-effect="fadeInTop"
+                    >
+                      <div class="services color-3">
+                        <span class="icon2"><i class="icon-settings"></i></span>
+                        <h3>Problem Solving</h3>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="services color-4">
+                        <span class="icon2"><i class="icon-layers2"></i></span>
+                        <h3>System Design</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div
+                      class="col-md-12 animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="hire">
+                        <h2>
+                          I have a proven track record of transforming complex
+                          engineering challenges into efficient, elegant
+                          software solutions!
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-		<div id="colorlib-main">
-			<section id="colorlib-hero" class="js-fullheight" data-section="home">
-				<div class="flexslider js-fullheight">
-					<ul class="slides">
-				   	<li style="background-image: url(images/img_bg_1_dark.jpg);">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-					   				<div class="slider-text-inner js-fullheight">
-					   					<div class="desc">
-						   					<h1>Hi! <br>I'm Philippe</h1>
-												<p><a href="files\philippe el asmar cv.pdf" target="_blank" class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
-											</div>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
-				   	<li style="background-image: url(images/img_bg_1_dark.jpg);">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-					   				<div class="slider-text-inner">
-					   					<div class="desc">
-						   					<h1>I am <br>a Software Engineer</h1>
-												<p><a href="files\philippe el asmar cv.pdf" class="btn btn-primary btn-learn">Download CV<i class="icon-download4"></i></a></p>
-											</div>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
-				  	</ul>
-			  	</div>
-			</section>
+          <section class="colorlib-education" data-section="education">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <span class="heading-meta">Education</span>
+                    <h2 class="colorlib-heading animate-box">Education</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div
+                  class="col-md-12 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <div class="fancy-collapse-panel">
+                    <div
+                      class="panel-group"
+                      id="accordion"
+                      role="tablist"
+                      aria-multiselectable="true"
+                    >
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseOne"
+                              aria-expanded="true"
+                              aria-controls="collapseOne"
+                            >
+                              <div>
+                                Master of Engineering in Computer Science
+                              </div>
+                              <span>Cornell University</span></a
+                            >
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseOne"
+                          class="panel-collapse collapse in"
+                          role="tabpanel"
+                          aria-labelledby="headingOne"
+                        >
+                          <div class="panel-body">
+                            <p>Graduation: <strong>May 2020</strong></p>
+                            <p>GPA: <strong>3.96</strong>/4.0</p>
+                            <div>
+                              <div class="col-md-6">
+                                <p>Relevant Courses:</p>
+                                <ul>
+                                  <li>Data Science in the Wild</li>
+                                  <li>Applied Machine Learning</li>
+                                  <li>Deep Learning</li>
+                                  <li>
+                                    Algorithms and Data Structures for
+                                    Applications
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                          <h4 class="panel-title">
+                            <a
+                              class="collapsed"
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="collapseTwo"
+                            >
+                              <div>Bachelor of Science in Computer Science</div>
+                              <span>Notre Dame University (NDU)</span></a
+                            >
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseTwo"
+                          class="panel-collapse collapse"
+                          role="tabpanel"
+                          aria-labelledby="headingTwo"
+                        >
+                          <div class="panel-body">
+                            <p>Graduation: <strong>May 2016</strong></p>
+                            <p>GPA: <strong>3.81</strong>/4.0</p>
+                            <div>
+                              <div class="col-md-6">
+                                <p>Academic Recognition:</p>
+                                <ul>
+                                  <li>Summa Cum Laude</li>
+                                  <li>Dean’s Honor list</li>
+                                  <li>Received 75% scholarship</li>
+                                </ul>
+                              </div>
+                              <div class="col-md-6">
+                                <p>Relevant Courses:</p>
+                                <ul>
+                                  <li>Data Mining</li>
+                                  <li>Data Structures</li>
+                                  <li>Analysis of Algorithms</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-			<section class="colorlib-about" data-section="about">
-							<div class="colorlib-narrow-content">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-											<div class="col-md-12">
-												<div class="about-desc">
-													<span class="heading-meta">About Me</span>
-													<h2 class="colorlib-heading">Who Am I?</h2>
-													<p><strong>Hi I'm Philippe El Asmar</strong> and I am a Software Engineer with 4 years of experience in creating, maintaining and deploying software end-to-end using a variety of technologies. </p>
-													<p>My experience ranges from developing and adapting in-house reporting tools in JAVA and deploying through a Pipeline on Production using Git and Jenkins, to developing and deploying dashboards and reports on Qlik Sense, a self-service dashboarding tool, all the way to extending software functionality and integrating with third party systems.</p>
-													<p>From an architecture perspective, I have designed with the help of Qlik a scalable architecture that will handle the needs of the business for the foreseen future as well as handled the administration of the environment. </p>
-													<p>In efforts to expand and integrate Qlik Sense with company-set objectives, I leveraged the available APIs to provide easier user access, versioning capabilities as well as one-click move to production using C# and ASP.NET.</p>
-													<br/>
-													<p>The following components summarize my fields of interest:</p>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-												<div class="services color-4">
-													<span class="icon2"><i class="icon-puzzle"></i></span>
-													<h3>Development</h3>
-												</div>
-											</div>
-											<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-												<div class="services color-2">
-													<span class="icon2"><i class="icon-data"></i></span>
-													<h3>Data Science</h3>
-												</div>
-											</div>
-											<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-												<div class="services color-3">
-													<span class="icon2"><i class="icon-link"></i></span>
-													<h3>Integration</h3>
-												</div>
-											</div>
-											<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-												<div class="services color-1">
-													<span class="icon2"><i class="icon-chart-line"></i></span>
-													<h3>Business Intelligence</h3>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-												<div class="hire">
-													<h2>I have successfully developed software projects from inception to company-wide roll out!</h2>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</section>
+          <section class="colorlib-experience" data-section="experience">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <span class="heading-meta">Experience</span>
+                    <h2 class="colorlib-heading animate-box">
+                      Work Experience
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="timeline-centered">
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-1">
+                          <i class="icon-pen2"></i>
+                        </div>
+                        <div class="timeline-label">
+                          <h2>
+                            <a href="#"
+                              >Software Development Engineer, Amazon Web
+                              Services (AWS)</a
+                            >
+                            <span>June 2020 - Present</span>
+                          </h2>
+                          <ul>
+                            <li>
+                              <b>Pipeline Performance & Reliability:</b>
+                              Revamped the .NET Lambda release pipeline,
+                              slashing the testing stage runtime by
+                              <b>99%</b> (from over 5 hours to 7 minutes) and
+                              achieving a <b>43x</b> overall performance
+                              improvement by resolving a critical deadlock bug
+                              and enabling full test parallelization.
+                            </li>
+                            <li>
+                              <b>Automation & Tooling:</b> Engineered and
+                              launched a novel automation tool (AutoVer) that
+                              streamlined versioning, changelog generation, and
+                              release processes for 15 high-level libraries,
+                              reducing a manual, error-prone workflow to a
+                              single-click operation via GitHub Actions.
+                            </li>
+                            <li>
+                              <b>Infrastructure Development & Security:</b>
+                              Architected and implemented a multi-account AWS
+                              testing infrastructure to support unit and
+                              integration tests across all team libraries. This
+                              initiative introduced automated PR checks that
+                              significantly improved code quality, developer
+                              velocity, and system reliability.
+                            </li>
+                            <li>
+                              <b>Operational Efficiency:</b> Enhanced system
+                              security and reduced operational toil by
+                              developing an automated test resource sweeper,
+                              which eliminated recurring weekly security tickets
+                              from orphaned resources and lowered infrastructure
+                              costs.
+                            </li>
+                            <li>
+                              <b>Strategic Initiative Leadership:</b> Led the
+                              end-to-end initiative to introduce ARM-based
+                              application deployment, delivering significant
+                              cost savings and performance improvements to
+                              customers by enabling more efficient compute
+                              options.
+                            </li>
+                            <li>
+                              <b>Rapid Service Enablement:</b> Spearheaded the
+                              .NET 8 launch on AWS Lambda by owning the OCI
+                              image release lifecycle, delivering
+                              production-ready images within hours of
+                              Microsoft's official GA release to unblock the
+                              Lambda service and ensure immediate availability
+                              for customers.
+                            </li>
+                            <li>
+                              <b>Process Automation:</b> Innovated a
+                              self-mutating CI/CD infrastructure for .NET Lambda
+                              OCI images, fully automating the annual runtime
+                              update process and future-proofing the release
+                              pipeline against thousands of hours of repeated
+                              engineering effort.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-2">
+                          <i class="icon-pen2"></i>
+                        </div>
 
-			<section class="colorlib-education" data-section="education">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Education</span>
-								<h2 class="colorlib-heading animate-box">Education</h2>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<div class="fancy-collapse-panel">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingOne">
-									        <h4 class="panel-title">
-									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-																<div>Master of Engineering in Computer Science</div>
-																<span>Cornell University</span></a>
-									        </h4>
-									    </div>
-									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-								         <div class="panel-body">
-														<p>Graduation: <strong>May 2020</strong></p>
-														<p>GPA: <strong>3.96</strong>/4.0</p>
-														<div>
-															<div class="col-md-6">
-																<p>Relevant Courses:</p>
-															<ul>
-																<li>Data Science in the Wild</li>
-																<li>Applied Machine Learning</li>
-																<li>Deep Learning</li>
-																<li>Algorithms and Data Structures for Applications</li>
-															</ul>
-															</div>
-														</div>
-								         </div>
-									    </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingTwo">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-																<div>Bachelor of Science in Computer Science</div>
-																<span>Notre Dame University (NDU)</span></a>
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-								        <div class="panel-body">
-													<p>Graduation: <strong>May 2016</strong></p>
-							            <p>GPA: <strong>3.81</strong>/4.0</p>
-													<div>
-														<div class="col-md-6">
-									            <p>Academic Recognition:</p>
-															<ul>
-																<li>Summa Cum Laude</li>
-																<li>Dean’s Honor list</li>
-																<li>Received 75% scholarship</li>
-															</ul>
-														</div>
-														<div class="col-md-6">
-															<p>Relevant Courses:</p>
-															<ul>
-																<li>Data Mining</li>
-																<li>Data Structures</li>
-																<li>Analysis of Algorithms</li>
-															</ul>
-														</div>
-													</div>
-								        </div>
-									    </div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                        <div class="timeline-label">
+                          <h2>
+                            <a href="#">Software Engineer, Murex Systems</a>
+                            <span
+                              >Data and Analytics Domain, Jan 2016 - Aug
+                              2019</span
+                            >
+                          </h2>
+                          <ul>
+                            <li>
+                              Developed a custom large-scale version control
+                              system for QlikSense using C# and TortoiseSVN to
+                              manage self-service business intelligence
+                              dashboard creation
+                            </li>
+                            <li>
+                              Developed an automated Move-to-Production process
+                              for QlikSense using C# that enables moving
+                              developments from testing environments to
+                              production in one click
+                            </li>
+                            <li>
+                              Developed a tool that automatically generates
+                              documentation pages from code comments of
+                              QlikSense scripts using C# and published them on
+                              Confluence using Rest APIs
+                            </li>
+                            <li>
+                              Created a database crawler which detects
+                              structural changes using SQL and C#
+                            </li>
+                            <li>
+                              Developed a data catalog to describe technical
+                              data elements using ASP.NET and C#
+                            </li>
+                            <li>
+                              Created an algorithm that dynamically creates a
+                              data model based on user fields selection that can
+                              be fed to our business intelligence tool QlikSense
+                              using C# and SQL
+                            </li>
+                            <li>
+                              Refactored, enhanced and maintained an in-house
+                              reporting tool that enables users to select fields
+                              from the information system and visualize the data
+                              using JAVA
+                            </li>
+                            <li>
+                              Leveraged C#, ASP.NET and other web technologies
+                              to build a web application that allows users to
+                              perform the development and releasing lifecycles
+                              in one place
+                            </li>
+                            <li>
+                              Designed scalable multi-node machine clusters to
+                              handle the load of the company-wide business
+                              intelligence tool QlikSense
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-3">
+                          <i class="icon-pen2"></i>
+                        </div>
 
-			<section class="colorlib-experience" data-section="experience">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Experience</span>
-								<h2 class="colorlib-heading animate-box">Work Experience</h2>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-				         <div class="timeline-centered">
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
+                        <div class="timeline-label">
+                          <h2>
+                            <a href="#">Software Engineer, Murex Systems</a>
+                            <span
+                              >Information Systems Team, Jan 2017 - Nov
+                              2017</span
+                            >
+                          </h2>
+                          <ul>
+                            <li>
+                              Developed plugins and extended functionality of
+                              JIRA Issue Tracking tool using JAVA, Maven and
+                              Atlassian SDK
+                            </li>
+                            <li>
+                              Developed APIs to integrate JIRA with different
+                              information systems using JAVA
+                            </li>
+                            <li>
+                              Drastically increased unit test coverage for
+                              entire JIRA project from 20% to 90%
+                            </li>
+                            <li>
+                              Increased health and eliminated code smells
+                              through the assistance of Jenkins and Sonar
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-4">
+                          <i class="icon-pen2"></i>
+                        </div>
 
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-pen2"></i>
-					               </div>
+                        <div class="timeline-label">
+                          <h2>
+                            <a href="#"
+                              >Software Engineer Intern, Murex Systems</a
+                            >
+                            <span
+                              >Data and Analytics Domain, May 2015 - Jan
+                              2016</span
+                            >
+                          </h2>
+                          <ul>
+                            <li>
+                              Researched and implemented Qlik Sense Self Service
+                              reporting tool
+                            </li>
+                            <li>
+                              Designed data models and created dashboards and
+                              reports on QlikView and QlikSense
+                            </li>
+                            <li>
+                              Engaged in client requirement gathering and
+                              translating them into functional and technical
+                              specifications
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
 
-					               <div class="timeline-label">
-					                  <h2><a href="#">Software Engineer, Murex Systems</a> <span>Data and Analytics Domain, Jan 2016 - Aug 2019</span></h2>
-														<ul>
-															<li>Developed a custom large-scale version control system for QlikSense using C# and TortoiseSVN to manage self-service business intelligence dashboard creation</li>
-															<li>Developed an automated Move-to-Production process for QlikSense using C# that enables moving developments from testing environments to production in one click</li>
-															<li>Developed a tool that automatically generates documentation pages from code comments of QlikSense scripts using C# and published them on Confluence using Rest APIs</li>
-															<li>Created a database crawler which detects structural changes using SQL and C#</li>
-															<li>Developed a data catalog to describe technical data elements using ASP.NET and C#</li>
-															<li>Created an algorithm that dynamically creates a data model based on user fields selection that can be fed to our business intelligence tool QlikSense using C# and SQL</li>
-															<li>Refactored, enhanced and maintained an in-house reporting tool that enables users to select fields from the information system and visualize the data using JAVA</li>
-															<li>Leveraged C#, ASP.NET and other web technologies to build a web application that allows users to perform the development and releasing lifecycles in one place</li>
-															<li>Designed scalable multi-node machine clusters to handle the load of the company-wide business intelligence tool QlikSense</li>
-														</ul>
-												 </div>
-					            </div>
-					         </article>
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
+                    <article
+                      class="timeline-entry begin animate-box"
+                      data-animate-effect="fadeInBottom"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-none"></div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="colorlib-expertise" data-section="expertise">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <span class="heading-meta">What I do?</span>
+                    <h2 class="colorlib-heading">
+                      Here are some of my expertise
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-pt-md">
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-1">
+                    <span class="icon">
+                      <i class="icon-data"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>Backend Languages</h3>
+                      <p>C#, Java, Python, SQL</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-2">
+                    <span class="icon">
+                      <i class="icon-globe-outline"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>Frontend Languages</h3>
+                      <p>TypeScript, JavaScript, HTML, CSS</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-3">
+                    <span class="icon">
+                      <i class="icon-layers2"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>Web Frameworks</h3>
+                      <p>ASP.NET Core, Blazor, Next.js</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-4">
+                    <span class="icon">
+                      <i class="icon-cloud"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>Cloud & DevOps</h3>
+                      <p>AWS, Docker, CI/CD, Distributed Systems</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-5">
+                    <span class="icon">
+                      <i class="icon-phone3"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>Mobile Development</h3>
+                      <p>Flutter, React Native</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-6">
+                    <span class="icon">
+                      <i class="icon-chart-line"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>Business Intelligence</h3>
+                      <p>QlikSense, QlikView</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-					               <div class="timeline-icon color-2">
-					                  <i class="icon-pen2"></i>
-					               </div>
+          <section class="colorlib-skills" data-section="skills">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <span class="heading-meta">My Specialty</span>
+                    <h2 class="colorlib-heading animate-box">My Skills</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="progress-wrap">
+                      <h3>C#</h3>
+                      <div class="progress">
+                        <div
+                          class="progress-bar color-2"
+                          role="progressbar"
+                          aria-valuenow="100"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 100%"
+                        >
+                          <span>100%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInRight"
+                  >
+                    <div class="progress-wrap">
+                      <h3>ASP.NET</h3>
+                      <div class="progress">
+                        <div
+                          class="progress-bar color-1"
+                          role="progressbar"
+                          aria-valuenow="100"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 100%"
+                        >
+                          <span>100%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="progress-wrap">
+                      <h3>Blazor</h3>
+                      <div class="progress">
+                        <div
+                          class="progress-bar color-3"
+                          role="progressbar"
+                          aria-valuenow="85"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 85%"
+                        >
+                          <span>85%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInRight"
+                  >
+                    <div class="progress-wrap">
+                      <h3>Next.js</h3>
+                      <div class="progress">
+                        <div
+                          class="progress-bar color-4"
+                          role="progressbar"
+                          aria-valuenow="90"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 90%"
+                        >
+                          <span>90%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="progress-wrap">
+                      <h3>Docker</h3>
+                      <div class="progress">
+                        <div
+                          class="progress-bar color-5"
+                          role="progressbar"
+                          aria-valuenow="85"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 85%"
+                        >
+                          <span>85%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInRight"
+                  >
+                    <div class="progress-wrap">
+                      <h3>JAVA</h3>
+                      <div class="progress">
+                        <div
+                          class="progress-bar color-6"
+                          role="progressbar"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 50%"
+                        >
+                          <span>50%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="progress-wrap">
+                      <h3>CI/CD</h3>
+                      <div class="progress">
+                        <div
+                          class="progress-bar color-7"
+                          role="progressbar"
+                          aria-valuenow="95"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 95%"
+                        >
+                          <span>95%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInRight"
+                  >
+                    <div class="progress-wrap">
+                      <h3>TypeScript</h3>
+                      <div class="progress">
+                        <div
+                          class="progress-bar color-8"
+                          role="progressbar"
+                          aria-valuenow="75"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 75%"
+                        >
+                          <span>75%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="progress-wrap">
+                      <h3>Python</h3>
+                      <div class="progress">
+                        <div
+                          class="progress-bar color-9"
+                          role="progressbar"
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 50%"
+                        >
+                          <span>50%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInRight"
+                  >
+                    <div class="progress-wrap">
+                      <h3>QlikSense Architect/Administrator/Developer</h3>
+                      <div class="progress">
+                        <div
+                          class="progress-bar color-10"
+                          role="progressbar"
+                          aria-valuenow="80"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 95%"
+                        >
+                          <span>95%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="progress-wrap">
+                      <h3>SQL</h3>
+                      <div class="progress">
+                        <div
+                          class="progress-bar color-11"
+                          role="progressbar"
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 85%"
+                        >
+                          <span>85%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInRight"
+                  >
+                    <div class="progress-wrap">
+                      <h3>Flutter</h3>
+                      <div class="progress">
+                        <div
+                          class="progress-bar color-12"
+                          role="progressbar"
+                          aria-valuenow="65"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 65%"
+                        >
+                          <span>65%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-					               <div class="timeline-label">
-					                  <h2><a href="#">Software Engineer, Murex Systems</a> <span>Information Systems Team, Jan 2017 - Nov 2017</span></h2>
-														<ul>
-															<li>Developed plugins and extended functionality of JIRA Issue Tracking tool using JAVA, Maven and Atlassian SDK</li>
-															<li>Developed APIs to integrate JIRA with different information systems using JAVA</li>
-															<li>Drastically increased unit test coverage for entire JIRA project from 20% to 90%</li>
-															<li>Increased health and eliminated code smells through the assistance of Jenkins and Sonar</li>
-														</ul>
-												 </div>
-					            </div>
-					         </article>
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
+          <div
+            id="colorlib-counter"
+            class="colorlib-counters"
+            style="background-image: url(images/cover_bg_1.jpg)"
+            data-stellar-background-ratio="0.5"
+          >
+            <div class="overlay"></div>
+            <div class="colorlib-narrow-content">
+              <div class="row"></div>
+              <div class="row">
+                <div class="col-md-3 text-center animate-box">
+                  <span
+                    id="years-experience"
+                    class="colorlib-counter js-counter"
+                    data-from="0"
+                    data-speed="1000"
+                    data-refresh-interval="50"
+                  ></span>
+                  <span class="colorlib-counter-label"
+                    >Years of Experience</span
+                  >
+                </div>
+                <div class="col-md-3 text-center animate-box">
+                  <span
+                    class="colorlib-counter js-counter"
+                    data-from="0"
+                    data-to="50"
+                    data-speed="500"
+                    data-refresh-interval="50"
+                  ></span>
+                  <span class="colorlib-counter-label">Dev. Projects</span>
+                </div>
+                <div class="col-md-3 text-center animate-box">
+                  <span
+                    class="colorlib-counter js-counter"
+                    data-from="0"
+                    data-to="120"
+                    data-speed="400"
+                    data-refresh-interval="50"
+                  ></span>
+                  <span class="colorlib-counter-label">Systems</span>
+                </div>
+                <div class="col-md-3 text-center animate-box">
+                  <span class="colorlib-counter">1M+</span>
+                  <span class="colorlib-counter-label">Users</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-					               <div class="timeline-icon color-3">
-					                  <i class="icon-pen2"></i>
-					               </div>
+          <section class="colorlib-interests" data-section="projects">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <span class="heading-meta">Projects</span>
+                    <h2 class="colorlib-heading animate-box">
+                      Applications & Projects
+                    </h2>
+                    <p>
+                      <a
+                        href="https://github.com/philasmar"
+                        target="_blank"
+                        class="btn btn-primary btn-learn"
+                        >Check out my Github <i class="icon-github"></i
+                      ></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="col-md-4 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <a href="https://www.gurucountdown.com" target="_blank">
+                      <div
+                        class="project"
+                        style="
+                          background-image: url(images/guru-countdown.png);
+                          background-size: contain;
+                        "
+                      ></div>
+                    </a>
+                  </div>
+                  <div
+                    class="col-md-4 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <a href="https://youtu.be/mICG-i25gpU" target="_blank">
+                      <div
+                        class="project"
+                        style="
+                          background-image: url(images/indabeat.png);
+                          background-size: contain;
+                        "
+                      ></div>
+                    </a>
+                  </div>
+                  <div
+                    class="col-md-4 animate-box"
+                    data-animate-effect="fadeInRight"
+                  >
+                    <a href="https://youtu.be/hc012OUZQgc" target="_blank">
+                      <div
+                        class="project"
+                        style="
+                          background-image: url(images/nopioid.png);
+                          background-size: contain;
+                        "
+                      ></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-					               <div class="timeline-label">
-					                  <h2><a href="#">Software Engineer Intern, Murex Systems</a> <span>Data and Analytics Domain, May 2015 - Jan 2016</span></h2>
-														<ul>
-															<li>Researched and implemented Qlik Sense Self Service reporting tool</li>
-															<li>Designed data models and created dashboards and reports on QlikView and QlikSense</li>
-															<li>Engaged in client requirement gathering and translating them into functional and technical specifications</li>
-														</ul>
-												 </div>
-					            </div>
-					         </article>
+          <section class="colorlib-interests" data-section="interests">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <span class="heading-meta">Interests</span>
+                    <h2 class="colorlib-heading animate-box">
+                      Hobbies & Interests
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div
+                      class="project"
+                      style="background-image: url(images/img-1.jpg)"
+                    >
+                      <div class="desc">
+                        <div class="con">
+                          <h3><a>Tech Industry</a></h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInRight"
+                  >
+                    <div
+                      class="project"
+                      style="background-image: url(images/img-2.jpg)"
+                    >
+                      <div class="desc">
+                        <div class="con">
+                          <h3><a>Astrophotography</a></h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInTop"
+                  >
+                    <div
+                      class="project"
+                      style="background-image: url(images/img-3.jpg)"
+                    >
+                      <div class="desc">
+                        <div class="con">
+                          <h3><a>Skiing</a></h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 animate-box"
+                    data-animate-effect="fadeInBottom"
+                  >
+                    <div
+                      class="project"
+                      style="background-image: url(images/img-4.jpg)"
+                    >
+                      <div class="desc">
+                        <div class="con">
+                          <h3><a>Hiking</a></h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
+                  <div
+                    class="elfsight-app-1ef7d408-907e-410e-8b74-1e80d57ed7d7"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-4">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Sales Person, Hamra Shopping & Trading CO.</a> <span>2013-2015</span></h2>
-													<ul>
-														<li>Demonstrated verbal communication and sales skills</li>
-														<li>Exceeded sales quotas by 20% each month</li>
-													</ul>
-					               </div>
-					            </div>
-					         </article>
+          <section class="colorlib-contact" data-section="contact">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <span class="heading-meta">Get in Touch</span>
+                    <h2 class="colorlib-heading">Contact</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div
+                    class="colorlib-feature colorlib-feature-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="colorlib-icon">
+                      <i class="icon-globe-outline"></i>
+                    </div>
+                    <div class="colorlib-text">
+                      <p>
+                        <a href="mailto:phil.asmar@gmail.com"
+                          >phil.asmar@gmail.com</a
+                        >
+                      </p>
+                    </div>
+                  </div>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-5">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Direct Dialoguer, Greenpeace Mediterranean</a> <span>2012-2013</span></h2>
-													<ul>
-														<li>Achieved Direct Dialoguer of the Month status</li>
-														<li>Engaged the public to support Greenpeace</li>
-													</ul>
-					               </div>
-					            </div>
-					         </article>
+                  <div
+                    class="colorlib-feature colorlib-feature-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="colorlib-icon">
+                      <i class="icon-map"></i>
+                    </div>
+                    <div class="colorlib-text">
+                      <p>Arlington VA 22202</p>
+                    </div>
+                  </div>
 
-					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-none">
-					               </div>
-					            </div>
-					         </article>
-					      </div>
-					   </div>
-				   </div>
-				</div>
-			</section>
+                  <div
+                    class="colorlib-feature colorlib-feature-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="colorlib-icon">
+                      <i class="icon-phone"></i>
+                    </div>
+                    <div class="colorlib-text">
+                      <p><a href="tel://">+347 931 8185</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- end:colorlib-main -->
+      </div>
+      <!-- end:container-wrap -->
+    </div>
+    <!-- end:colorlib-page -->
 
-			<section class="colorlib-expertise" data-section="expertise">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<span class="heading-meta">What I do?</span>
-								<h2 class="colorlib-heading">Here are some of my expertise</h2>
-							</div>
-						</div>
-					</div>
-					<div class="row row-pt-md">
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-1">
-								<span class="icon">
-									<i class="icon-puzzle"></i>
-								</span>
-								<div class="desc">
-									<h3>Software Development</h3>
-									<p>Develop and maintain C#, JAVA solutions from back-end to front-end in HTML, CSS and JS</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-2">
-								<span class="icon">
-									<i class="icon-layers2"></i>
-								</span>
-								<div class="desc">
-									<h3>System Architecting</h3>
-									<p>Study user adoptions and trends to design a scalable and highly-available architecture</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-3">
-								<span class="icon">
-									<i class="icon-monitor"></i>
-								</span>
-								<div class="desc">
-									<h3>System Administration</h3>
-									<p>Monitor and maintain system health through automated processes that visualize logs and activity</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-4">
-								<span class="icon">
-									<i class="icon-data"></i>
-								</span>
-								<div class="desc">
-									<h3>Data Modeling</h3>
-									<p>Analysis and Modeling of data objects in Qlik Sense using Qlik Script and SQL</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-5">
-								<span class="icon">
-									<i class="icon-chart-bar"></i>
-								</span>
-								<div class="desc">
-									<h3>Data Visualizing</h3>
-									<p>Follow Dashboard, Analysis, Reporting (DAR) methodology to accuartely visualize a dataset</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-6">
-								<span class="icon">
-									<i class="icon-chart-line"></i>
-								</span>
-								<div class="desc">
-									<h3>Reporting & Dashboarding</h3>
-									<p>Develop reports and dashboards that answer existing business questions and proposes new ones</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Flexslider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- Owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Counters -->
+    <script src="js/jquery.countTo.js"></script>
 
-			<section class="colorlib-skills" data-section="skills">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<span class="heading-meta">My Specialty</span>
-								<h2 class="colorlib-heading animate-box">My Skills</h2>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-							<div class="col-md-12">
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>ASP.NET</h3>
-									<div class="progress">
-									 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
-									  	aria-valuemin="0" aria-valuemax="100" style="width:50%">
-									    <span>50%</span>
-									  	</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>C#.NET</h3>
-									<div class="progress">
-									 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
-									  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
-									    <span>95%</span>
-									  	</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>C++</h3>
-									<div class="progress">
-									 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-									  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
-									    <span>75%</span>
-									  	</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>CSS</h3>
-									<div class="progress">
-									 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-									  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-									    <span>80%</span>
-									  	</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>HTML</h3>
-									<div class="progress">
-									 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-									  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-									    <span>85%</span>
-									  	</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>JAVA</h3>
-									<div class="progress">
-									 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-									  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-									    <span>90%</span>
-									  	</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Javacript</h3>
-									<div class="progress">
-									 	<div class="progress-bar color-7" role="progressbar" aria-valuenow="70"
-									  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-									    <span>85%</span>
-									  	</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>jQuery</h3>
-									<div class="progress">
-									 	<div class="progress-bar color-8" role="progressbar" aria-valuenow="80"
-									  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
-									    <span>75%</span>
-									  	</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Python</h3>
-									<div class="progress">
-									 	<div class="progress-bar color-9" role="progressbar" aria-valuenow="70"
-									  	aria-valuemin="0" aria-valuemax="100" style="width:50%">
-									    <span>50%</span>
-									  	</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>QlikSense Architect/Administrator/Developer</h3>
-									<div class="progress">
-									 	<div class="progress-bar color-10" role="progressbar" aria-valuenow="80"
-									  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
-									    <span>95%</span>
-									  	</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>SQL</h3>
-									<div class="progress">
-									 	<div class="progress-bar color-11" role="progressbar" aria-valuenow="70"
-									  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-									    <span>85%</span>
-									  	</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>VB.NET</h3>
-									<div class="progress">
-									 	<div class="progress-bar color-12" role="progressbar" aria-valuenow="80"
-									  	aria-valuemin="0" aria-valuemax="100" style="width:65%">
-									    <span>65%</span>
-									  	</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+    <!-- MAIN JS -->
+    <script src="js/main.js"></script>
 
-			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
-				<div class="overlay"></div>
-				<div class="colorlib-narrow-content">
-					<div class="row">
-					</div>
-					<div class="row">
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="6" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Dev. Projects</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="12" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Data Systems</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="122" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Dashboards</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="2000" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Users</span>
-						</div>
-					</div>
-				</div>
-			</div>
+    <script>
+      // Wait for the page structure to be ready
+      document.addEventListener("DOMContentLoaded", function () {
+        // Find the specific counter element by its ID
+        const yearsCounter = document.getElementById("years-experience");
 
-			<section class="colorlib-interests" data-section="projects">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Projects</span>
-								<h2 class="colorlib-heading animate-box">Applications & Projects</h2>
-								<p><a href="https://github.com/philasmar" target="_blank" class="btn btn-primary btn-learn">Check out my Github <i class="icon-github"></i></a></p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
+        // Make sure the element was found before running the code
+        if (yearsCounter) {
+          const startYear = 2015;
+          const currentYear = new Date().getFullYear();
+          const yearsOfExperience = currentYear - startYear;
 
-						<div class="col-md-12">
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<a href="https://youtu.be/mICG-i25gpU" target="_blank">
-									<div class="project" style="background-image: url(images/indabeat.png); background-size: contain;">
-									</div>
-								</a>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<a href="https://youtu.be/hc012OUZQgc" target="_blank">
-									<div class="project" style="background-image: url(images/nopioid.png); background-size: contain;">
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+          // Update the 'data-to' attribute that the animation script uses as its target
+          yearsCounter.setAttribute("data-to", yearsOfExperience);
 
-			<section class="colorlib-interests" data-section="interests">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Interests</span>
-								<h2 class="colorlib-heading animate-box">Hobbies & Interests</h2>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="project" style="background-image: url(images/img-1.jpg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a>Tech Industry</a></h3>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="project" style="background-image: url(images/img-2.jpg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a>Astrophotography</a></h3>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-								<div class="project" style="background-image: url(images/img-3.jpg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a>Skiing</a></h3>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-								<div class="project" style="background-image: url(images/img-4.jpg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a>Hiking</a></h3>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="elfsight-app-1ef7d408-907e-410e-8b74-1e80d57ed7d7"></div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="colorlib-contact" data-section="contact">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Get in Touch</span>
-								<h2 class="colorlib-heading">Contact</h2>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-5">
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-globe-outline"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="mailto:phil.asmar@gmail.com">phil.asmar@gmail.com</a></p>
-								</div>
-							</div>
-
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-map"></i>
-								</div>
-								<div class="colorlib-text">
-									<p>New York NY 10044</p>
-								</div>
-							</div>
-
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-phone"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="tel://">+347 931 8185</a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</div><!-- end:colorlib-main -->
-	</div><!-- end:container-wrap -->
-	</div><!-- end:colorlib-page -->
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
-
-
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
-
-	</body>
+          // IMPORTANT: Also update the initial text content of the element to 0.
+          // The animation script will count from the initial text (now 0) up to the new 'data-to' value.
+          // This ensures the animation works correctly with the dynamically calculated value.
+          yearsCounter.textContent = "0";
+        }
+      });
+    </script>
+  </body>
 </html>
